@@ -10,7 +10,7 @@ public class main {
 
     public static void main(String[] args) {
     String nombre;
-    double salario;   
+    double salario = 600;   
     int opcion;
 
     Scanner entrada = new Scanner(System.in);
@@ -25,11 +25,15 @@ opcion = entrada.nextInt();
 switch( opcion ){
 
     case 1:
-    
+    salario = salario + (salario*0.25);
+    break;
+
     case 2:
 
     case 3:
         
 }
+JoptionPane.showMessageDialog(null, "El salario es: " +salario);
+
     }
 }
